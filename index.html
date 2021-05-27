@@ -249,9 +249,6 @@
 
 			});
 
-
-			//Utilizar setinterval a cada segundo e atualizar a barra de progresso.
-
 			audioPlayer.onloadstart = ()=>{
 				alert('começou carregar.');
 			}
@@ -262,17 +259,11 @@
     			alert(audioPlayer.duration);
 			};
 
-			//audioPlayer.play = function(){
-				//alert('começou');
-			//}
-
 			audioPlayer.addEventListener('timeupdate',(e)=>{
 				var currentTime = audioPlayer.currentTime;
 				console.log(currentTime);
  		
 			});
-			//(segundo atual / segundo total) * 100
-
 
 	</script>
 </body>
